@@ -115,7 +115,7 @@ def main():
     with typer.progressbar(dataset, label="Generieren   ", width=80, update_min_steps=5, show_pos=True, show_eta=False,
                            empty_char=" ") as bar:
         for unique in bar:
-            doc = Document("Zertifikatvorlage_Technologie_G_2021_2022.docx")
+            doc = Document("Vorlage.docx")
 
             doc = fill_template(doc, unique)
             doc = fill_template(doc, common)
